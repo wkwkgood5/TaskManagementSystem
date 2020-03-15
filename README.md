@@ -4,7 +4,10 @@
 1 What optimizations were made for improving tasks retrieval?<br>
 
 2 How would you support bulk operations?<br>
-
+Using methods that `JdbcTemplate` provide. The main methods are 
+* `excute()` which can be used in bulk delete.
+* `batchUpdate()`
+* `queryForxxx()`
 3 How to optimize for task retrieval and design?<br>
 
 4 How to implement user specific tasks. How would the current design change if this is required?<br>
