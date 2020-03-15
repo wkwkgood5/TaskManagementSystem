@@ -4,7 +4,7 @@
 1 What optimizations were made for improving tasks retrieval?<br>
 
 2 How would you support bulk operations?<br>
-Using methods that `JdbcTemplate` provide. The main methods are 
+  Using methods that `JdbcTemplate` provide. The main methods are 
 * `excute()` can implement SQL command.
 * `batchUpdate()` can be used for bulk updating, saving and detete.
 * `queryForxxx()` for bulk querying
