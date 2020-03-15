@@ -16,9 +16,9 @@ public interface UserMapper{
     @Delete("delete from task where id = #{id}")
     int deleteById(@Param("id") String id);
 
-    @Insert({ "insert into student(id, level, description, date, pic) values(#{id}, #{level}, #{description}, #{data}, #{pic})" })
+    @Insert({ "insert into task(id, level, description, date, pic) values(#{id}, #{level}, #{description}, #{data}, #{pic})" })
     int add(User user);
 
-    @Update("update student set (id, level, description, date, pic)=(#{level}, #{description}, #{data}, #{pic}) where id=#{id}")
+    @Update("update task set (id, level, description, date, pic)=(#{level}, #{description}, #{data}, #{pic}) where id=#{id}")
     int update(User user);
 }

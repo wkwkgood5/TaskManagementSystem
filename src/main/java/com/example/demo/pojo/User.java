@@ -6,34 +6,34 @@ public class User {
 
     private String level;
 
-    private String  description;
+    private String description;
 
     private String date;
 
     private String pic;
 
-    public String getClasses() {
+    public String getPic() {
             return pic;
         }
 
-    public void setClasses(String classes) {
-            this.pic = classes;
+    public void setPic(String pic) {
+            this.pic = pic;
         }
 
-    public String getSex() {
+    public String getDescription() {
         return description;
     }
 
-    public void setSex(String sex) {
-        this.description = sex;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getAge() {
+    public String getDate() {
         return date;
     }
 
-    public void setAge(String age) {
-        this.date = age;
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getId() {
@@ -44,12 +44,12 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
+    public String getLevel() {
         return level;
     }
 
-    public void setName(String name) {
-        this.level = name;
+    public void setLevel(String level) {
+        this.level = level;
     }
 
     @Override

@@ -210,22 +210,24 @@
             <th class="btgn">Date</th>
             <th class="btgn">Person in charge</th>
             <th class="btgn">Operation</th>
-            <th class="btgn">Operation</th>
+            <!--<th class="btgn">Operation</th>-->
 
 
         </tr>
 
         <tr th:each="user : ${users}">
             <td th:text="${user.id}"></td>
-            <td th:text="${user.name}"></td>
-            <td th:text="${user.classes}"></td>
-            <td th:text="${user.age}"></td>
-            <td th:text="${user.sex}"></td>
+            <td th:text="${user.level}"></td>
+            <td th:text="${user.description}"></td>
+            <td th:text="${user.date}"></td>
+            <td th:text="${user.pic}"></td>
 
             <!--<td th:text="${#dates.format(user.birthday, 'yyyy-MM-dd')}">1980-02-30</td>-->
             <!--<td th:text="${user.phone}">1</td>-->
-            <td><a th:href="@{'/delete/'+${user.id}}"><input class="btgn3" type="submit" value="delet" style="height:30px;width:60px;"></a></td>
-            <td><a th:href="@{'/update/'+${user.id}}"><input class="btgn3" type="submit" value="revise" style="height:30px;width:60px;"></a></td>
+            <td>
+                <a th:href="@{'/delete/'+${user.id}}"><input class="btgn3" type="submit" value="delete" style="height:30px;width:60px;"></a>
+                <a th:href="@{'/update/'+${user.id}}"><input class="btgn3" type="submit" value="revise" style="height:30px;width:60px;"></a>
+            </td>
 
         </tr>
 
