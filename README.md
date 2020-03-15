@@ -9,5 +9,7 @@
 
 4 How to implement user specific tasks. How would the current design change if this is required?<br>
 
-<br><br><br><br>![main page](https://github.com/wkwkgood5/TaskManagementSystem/blob/master/pic/main.png)<br><br>
+<br><br><br><br>
+localhost:8080/all
+![main page](https://github.com/wkwkgood5/TaskManagementSystem/blob/master/pic/main.png)<br><br>
 <br><br>![add page](https://github.com/wkwkgood5/TaskManagementSystem/blob/master/pic/add.png)
