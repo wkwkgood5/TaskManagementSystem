@@ -19,7 +19,7 @@
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\Software\IntelliJ\Project\Task Manager System\springboot\src\main\resources\static\task</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/src/main/resources/static/task</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>
