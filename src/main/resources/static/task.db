@@ -1,0 +1,19 @@
+drop table if exists student;
+create table student
+(
+    id integer primary key  autoincrement not null,
+    name  varchar(20),
+    sex varchar(20),
+    age integer(11),
+    classes varchar(10)
+);
+
+drop table if exists task;
+create table task
+(
+    id integer primary key autoincrement not null,
+    level  varchar(20),
+    description varchar(100),
+    date varchar(11),
+    pic varchar(10)
+);

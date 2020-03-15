@@ -1,0 +1,15 @@
+#jdbc
+server:
+  port: 8080
+spring:
+  mian:
+    allow-bean-definition-overriding: true
+  datasource:
+#    url: jdbc:mysql://localhost:3306/task?serverTimezone=UTC&characterEncoding=utf-8
+    url: jdbc:sqlite:D:\Software\IntelliJ\Project\Task Manager System\springboot\src\main\resources\static\task
+    username: root
+    password: password
+
+
+mybatis:
+  type-aliases-package: com.qhit.demo.pojo

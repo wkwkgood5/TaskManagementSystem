@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>add</title>
+    <style type="text/css">
+        table {border-collapse: collapse; font-size: 14px;
+            width: 80%; margin: auto}
+        table, th, td {border: 0px solid darkslategray;padding: 10px}
+        .btgn{
+            font-family: "Times New Roman";
+            font-size: 16px;
+            /*color: #255e95;*/
+            /*background-color: #99CCFF;*/
+            text-align: center;
+        }
+        .btgn2 {
+            font-family: "Times New Roman";
+            font-size: 20px;
+            /*color: #255e95;*/
+            /*background-color: #99CCFF;*/
+            text-align: center;
+        }
+        .ccc{
+            font-family: "Times New Roman";
+            font-size: 16px;
+            /*color: #255e95;*/
+            /*background-color: #ff7c76;*/
+            text-align: center;
+        }
+
+        tr:nth-child(2n){
+            background-color:#FFCC99;
+        }
+        tr:nth-child(2n+1) {
+            background-color: #99CC99;
+        }
+
+        .c{
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+<body>
+    <div style="margin:122px auto; width:392px">
+        <span class="btgn" style="color: darkslategray; font-size: 30px" >Please input the information of the task</span><br/>
+        <!--<span class="span" style="color: darkslategray; font-size: 30px" >添加页面！</span>-->
+        <form action="AddUser" method="post" class="c" th:object="${user}">
+       <!-- <form action="AddUser" method="get">-->
+            <tr><th class="btgn">ID:</th> <input name="id" class="btgn" th:value="${id}"/><tr/><br/>
+            <tr><th class="ccc">Level:</th> <input name="name"class="ccc" th:value="${name}"/><tr/> <br/>
+            <tr><th class="btgn">Description:</th> <input name="age" class="btgn"th:value="${age}"/> </tr><br/>
+            <tr><th class="ccc">Date:</th> <input name="sex"class="ccc" th:value="${sex}"/> </tr><br/>
+            <tr><th class="btgn">Person in charge:</th> <input name="classes"class="btgn" th:value="${classes}"/></tr> <br/>
+
+            <button class="btgn2" type="submit" value="add task" style="height:50px;width:100px;">submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
