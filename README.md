@@ -8,6 +8,7 @@
 * `excute()` can implement SQL command.
 * `batchUpdate()` can be used for bulk updating, saving and detete.
 * `queryForxxx()` for bulk querying
+
 3 How to optimize for task retrieval and design?<br>
 
 4 How to implement user specific tasks. How would the current design change if this is required?<br>
