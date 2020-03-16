@@ -4,6 +4,10 @@
 1 What optimizations were made for improving tasks retrieval?<br>
 
 2 How would you support bulk operations?<br>
+  Using methods that `JdbcTemplate` provide. The main methods are 
+* `excute()` can implement SQL command.
+* `batchUpdate()` can be used for bulk updating, saving and detete.
+* `queryForxxx()` for bulk querying
 
 3 How to optimize for task retrieval and design?<br>
 
@@ -11,5 +15,5 @@
 
 <br><br><br><br>
 localhost:8080/all
-![main page](https://github.com/wkwkgood5/TaskManagementSystem/blob/master/pic/main.png)<br><br>
+![main page](https://github.com/wkwkgood5/TaskManagementSystem/blob/master/pic/mainpage.png)<br><br>
 <br><br>![add page](https://github.com/wkwkgood5/TaskManagementSystem/blob/master/pic/add.png)
