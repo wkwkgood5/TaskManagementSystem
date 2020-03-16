@@ -2,8 +2,9 @@
 ### A task manager system using springboot+mybatis+thymeleaf+sqlite to support CRUD operation<br>
 #### Four questions<br>
 1 What optimizations were made for improving tasks retrieval?<br>
-  Retrieval by ID. I set the ID of each task as the primary key. So each task is retrivaled by ID. This could improve the speed of           retrievaling, especially for large scale data.<br>
-  Using multithreading method. Creat a config class and import `org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor` and `java.util.concurrent.ThreadPoolExecutor` then create a `ThreadPoolTaskExecutor` method.
+  1.1 Indexing is an effective way, providing rapid random lookups and efficient access. I set the ID of each task as the primary key. So each task is retrivaled by ID. This could improve the speed of retrievaling, especially for large scale data.<br>
+  1.2 If a SELECT query contains an ORDER BY, GROUP BY or DISTINCT clause, we can use a b-tree structure to sort the output rows.<br>
+  1.3 Using multithreading method. Creat a config class and import `org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor`  and `java.util.concurrent.ThreadPoolExecutor` then create a `ThreadPoolTaskExecutor` method.
   
 2 How would you support bulk operations?<br>
   Using methods that `JdbcTemplate` provide. The main methods are 
@@ -13,7 +14,7 @@
 
 3 How to optimize for task retrieval and design?<br>
   The way to optimize for task retrivieal and design is increasing the throughout of springboot service.<br>
-  There two methods to achieve this:
+  There are two methods to achieve this:
   Asynchronous execution. (Callable, webAsyncTask, Deferred)<br>
   Set maximum connections and threads.
     
