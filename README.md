@@ -19,7 +19,11 @@
   Set maximum connections and threads.
     
 #### 4 How to implement user specific tasks. How would the current design change if this is required?<br>
-
+4.1 Divide the project into different modules, and then delete extra files and folders, revise pom.xml<br>
+4.2 The front-end posts messages to the queue, while the backend processes the pending messages one at the time. The benefits are: <br>
+4.2.1 If the backend is unavailable, the queue acts as a buffer.<br>
+4.2.2 If the front-end is producing more messages than what the backend can handle, those messages are buffered in the queue.<br>
+4.2.3 We can scale the backend independently of the front-end.<br>
 <br><br>
 localhost:8080/all
 ![main page](https://github.com/wkwkgood5/TaskManagementSystem/blob/master/pic/mainpage.png)<br><br>
