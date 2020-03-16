@@ -42,18 +42,18 @@
 
     </style>
 </head>
-<body>
+
 <body>
     <div style="margin:122px auto; width:392px">
         <span class="btgn" style="color: darkslategray; font-size: 30px" >Please input the information of the task</span><br/>
-        <!--<span class="span" style="color: darkslategray; font-size: 30px" >添加页面！</span>-->
+
         <form action="AddUser" method="post" class="c" th:object="${user}">
        <!-- <form action="AddUser" method="get">-->
             <tr><th class="btgn">ID:</th> <input name="id" class="btgn" th:value="${id}"/><tr/><br/>
-            <tr><th class="ccc">Level:</th> <input name="name"class="ccc" th:value="${name}"/><tr/> <br/>
-            <tr><th class="btgn">Description:</th> <input name="age" class="btgn"th:value="${age}"/> </tr><br/>
-            <tr><th class="ccc">Date:</th> <input name="sex"class="ccc" th:value="${sex}"/> </tr><br/>
-            <tr><th class="btgn">Person in charge:</th> <input name="classes"class="btgn" th:value="${classes}"/></tr> <br/>
+            <tr><th class="ccc">Level:</th> <input name="name"class="ccc" th:value="${level}"/><tr/> <br/>
+            <tr><th class="btgn">Description:</th> <input name="age" class="btgn"th:value="${date}"/> </tr><br/>
+            <tr><th class="ccc">Date:</th> <input name="sex"class="ccc" th:value="${description}"/> </tr><br/>
+            <tr><th class="btgn">Person in charge:</th> <input name="classes"class="btgn" th:value="${pic}"/></tr> <br/>
 
             <button class="btgn2" type="submit" value="add task" style="height:50px;width:100px;">submit</button>
 

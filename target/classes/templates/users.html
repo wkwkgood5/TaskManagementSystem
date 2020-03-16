@@ -154,7 +154,6 @@
             -o-transition:0.3s all ease;
         }
 
-        /*动画*/
         .test:hover{
             box-shadow:0 0 10px #666;
             box-shadow:0 0 10px #666;
@@ -210,7 +209,6 @@
             <th class="btgn">Date</th>
             <th class="btgn">Person in charge</th>
             <th class="btgn">Operation</th>
-            <!--<th class="btgn">Operation</th>-->
 
 
         </tr>
@@ -222,8 +220,6 @@
             <td th:text="${user.date}"></td>
             <td th:text="${user.pic}"></td>
 
-            <!--<td th:text="${#dates.format(user.birthday, 'yyyy-MM-dd')}">1980-02-30</td>-->
-            <!--<td th:text="${user.phone}">1</td>-->
             <td>
                 <a th:href="@{'/delete/'+${user.id}}"><input class="btgn3" type="submit" value="delete" style="height:30px;width:60px;"></a>
                 <a th:href="@{'/update/'+${user.id}}"><input class="btgn3" type="submit" value="revise" style="height:30px;width:60px;"></a>
@@ -232,27 +228,7 @@
         </tr>
 
         <a href="Add1"><input class="btgn2" type="submit" value="add task" style="height:50px;width:100px;"></a>
-        <!-- <div class="test">
 
-            <a href="#" class="aLink">
-                <form enctype="multipart/form-data" method="post" action="/excelImport">
-                <span class="txt"> <input type="submit"value="导入"/></span>
-                <img src="../img/02.png" class="img" />
-                <span class="txt2">
-        	<span><input type="file" name="file"/></span>
-
-        </span>
-                </form>
-                <span class="btn">
-        	<span></span>
-        </span>
-            </a>
-
-        </div> -->
-        <!-- <form enctype="multipart/form-data" method="post" action="/excelImport">
-            选择Excel表格：<input type="file" name="file"/><br/>
-            <input type="submit"value="导入"/>
-        </form> -->
     </table>
 </div>
 </body>

@@ -9,14 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA
- * User: 李林威
- * Date: 2019/7/3
- * Time: 14:57
- * To change this template use File / Settings / File Templates.
- * Description:
- */
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired

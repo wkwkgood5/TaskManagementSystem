@@ -7,8 +7,7 @@ import java.util.List;
 
 @Mapper
 public interface UserMapper{
-    //查询全部
-    //在这里我利用了sql优化，之查出相应的字段，避免出现*号
+
     @Select("select * from task")
     List<User> selectUserByName();
 
