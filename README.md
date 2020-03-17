@@ -14,7 +14,7 @@
 
 #### 3 How to optimize for task retrieval and design?<br>
   The way to optimize for task retrivieal and design is increasing the throughout of springboot service.<br>
-  There are two methods to achieve this:
+  There are two methods to achieve this:<br>
   Asynchronous execution. (`Callable`, `webAsyncTask`, `Deferred`)<br>
   Set maximum connections and threads.
     
