@@ -14,8 +14,8 @@
 
 #### 3 How to optimize for task retrieval and design?<br>
   The way to optimize for task retrivieal and design is increasing the throughout of springboot service.<br>
-  There are two methods to achieve this:<br>
-  Asynchronous execution. (`Callable`, `webAsyncTask`, `Deferred`)<br>
+  There are two methods to achieve this:
+  Asynchronous execution(`Callable`, `webAsyncTask`, `Deferred`),<br>
   Set maximum connections and threads.
     
 #### 4 How to implement user specific tasks. How would the current design change if this is required?<br>
