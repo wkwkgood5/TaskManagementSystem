@@ -5,7 +5,7 @@ spring:
   mian:
     allow-bean-definition-overriding: true
   datasource:
-    url: jdbc:sqlite:D:/Software/IntelliJ/Project/Task Manager System/TaskManagerSystem/src/main/resources/static/task
+    url: jdbc:sqlite:D:/Software/IntelliJ/Project/Task Manager System/TaskManagementSystem/src/main/resources/static/task
     username: root
     password: password
 
