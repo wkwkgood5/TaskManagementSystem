@@ -9,15 +9,17 @@ import java.util.List;
 public interface UserMapper{
 
     @Select("select * from task")
-    List<User> selectUserByName();
+    List<User> selectAll();
 
+    @Select("select id, level, description, date, pic from task where id = #{id}")
+    User select(String id);
 
     @Delete("delete from task where id = #{id}")
-    int deleteById(@Param("id") String id);
+    int delete(String id);
 
-    @Insert({ "insert into task(id, level, description, date, pic) values(#{id}, #{level}, #{description}, #{data}, #{pic})" })
-    int add(User user);
+    @Insert({ "insert into task(id, level, description, date, pic) values(#{id}, #{level}, #{description}, #{date}, #{pic})" })
+    int insert(User user);
 
-    @Update("update task set (id, level, description, date, pic)=(#{level}, #{description}, #{data}, #{pic}) where id=#{id}")
+    @Update("update task set level=#{level}, description=#{description}, date=#{date}, pic=#{pic} where id=#{id}")
     int update(User user);
 }

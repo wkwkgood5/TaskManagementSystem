@@ -11,4 +11,4 @@ spring:
 
 
 mybatis:
-  type-aliases-package: com.qhit.demo.pojo
+  type-aliases-package: com.example.demo.pojo

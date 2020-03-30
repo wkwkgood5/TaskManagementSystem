@@ -6,13 +6,15 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface UserService{
-    public List<User> selectUserByName();
+    List<User> getAll();
 
-    int deleteById(@Param("id") String id);
+    User getOne(String id);
+
+    int remove(String id);
 
     int add(User user);
 
-    int update(User user);
+    int modify(User user);
 
-    public void saveAll(List<User> list);
+    void saveAll(List<User> list);
 }

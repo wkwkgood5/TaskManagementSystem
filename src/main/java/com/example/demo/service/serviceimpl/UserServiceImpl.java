@@ -15,30 +15,34 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public List<User> selectUserByName() {
-        return userMapper.selectUserByName();
+    public List<User> getAll() {
+        return userMapper.selectAll();
+    }
+
+    public User getOne(String id){
+        return userMapper.select(id);
     }
 
     @Override
-    public int deleteById(String id) {
-        return userMapper.deleteById(id);
+    public int remove(String id) {
+        return userMapper.delete(id);
     }
 
     @Override
     public int add(User user) {
-        return userMapper.add(user);
+        return userMapper.insert(user);
     }
 
     @Override
-    public int update(User user) {
+    public int modify(User user) {
         return userMapper.update(user);
     }
 
     @Transactional
     @Override
     public void saveAll(List<User> list) {
-        for (User user : list){
-            userMapper.add(user);
+        for (User user: list){
+            userMapper.insert(user);
         }
     }
 }
