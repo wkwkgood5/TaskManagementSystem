@@ -53,7 +53,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Task{" +
                 "id='" + id + '\'' +
                 ", level='" + level + '\'' +
                 ", description='" + description + '\'' +

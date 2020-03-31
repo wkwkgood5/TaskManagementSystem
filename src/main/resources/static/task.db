@@ -7,3 +7,18 @@ create table task
     date varchar(11),
     pic varchar(10)
 );
+create index idindex on task(id);
+insert into task (id, level, description, date, pic)
+values (1,"normal", "event one", "2020/02/13", "A");
+
+insert into task (id, level, description, date, pic)
+values (2,"normal", "event two", "2020/02/16", "B");
+
+insert into task (id, level, description, date, pic)
+values (3,"urgent", "event three", "2020/03/01", "C");
+
+insert into task (id, level, description, date, pic)
+values (4,"normal", "event four", "2020/03/11", "D");
+
+insert into task (id, level, description, date, pic)
+values (5,"normal", "event five", "2020/03/14", "E");

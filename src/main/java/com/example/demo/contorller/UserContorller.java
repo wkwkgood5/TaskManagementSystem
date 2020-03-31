@@ -21,7 +21,7 @@ public class UserContorller {
     private UserService userService;
 
     @GetMapping("getAll")
-    public List getall(Model model){
+    public List getAll(Model model){
 //        List<User> users = userService.getAll();
 //        model.addAttribute("users", users);
 //        return "users";
@@ -29,7 +29,7 @@ public class UserContorller {
     }
 
     @GetMapping("/get/{id}")
-    public User get(@PathVariable String id){
+    public User getOne(@PathVariable String id){
         return userService.getOne(id);
     }
 

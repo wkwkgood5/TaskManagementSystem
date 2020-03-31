@@ -66,9 +66,14 @@
       <Position>5</Position>
       <DataType>varchar(10)|0s</DataType>
     </column>
-    <key id="21" parent="8">
+    <index id="21" parent="8" name="idindex">
+      <ColNames>id</ColNames>
+      <ColumnCollations></ColumnCollations>
+    </index>
+    <key id="22" parent="8">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexName>idindex</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
