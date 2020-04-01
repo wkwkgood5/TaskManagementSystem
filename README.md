@@ -1,5 +1,5 @@
 # TaskManagementSystem
-### A task manager system using springboot+mybatis+thymeleaf+sqlite to support CRUD operation<br>
+### A task management system using springboot+mybatis+thymeleaf+sqlite to support CRUD operation<br>
 #### Four questions with answers<br>
 #### 1 What optimizations were made for improving tasks retrieval?<br>
   1.1 Indexing is an effective way, providing rapid random lookups and efficient access. We set the ID of each task as the primary key. So each task is retrievaled by ID. This could improve the speed of retrievaling, especially for large scale data.<br>
