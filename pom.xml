@@ -66,7 +66,7 @@
         <dependency><!--sqlite数据库连接-->
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
-            <version>3.21.0.1</version>
+            <version>3.41.2.2</version>
         </dependency>
 
         <dependency><!--配置双数据源必须要导的jar包-->
